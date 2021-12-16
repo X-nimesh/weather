@@ -8,7 +8,7 @@
 .App {
   background:#353B47;
   color:white;
-  height: 100%;
+  height: 100vh;
 }
 .App-header{
   display: flex;

@@ -47,6 +47,7 @@ function WeatherInfo(){
     let location="Kathmandu";
 
     let [weather,setWeather]=useState([]);
+    let [temp,setTemp]=useState([]);
     let [geo,setlocation]=useState(["kathmandu"]);
     
     function readValue(value)
@@ -63,16 +64,18 @@ function WeatherInfo(){
 
         setlocation(location);
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${geo}&cnt=4&appid=aea7fbafa0aa1dbedbd0e07af86c83ce`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${geo}&units=metric&cnt=4&appid=aea7fbafa0aa1dbedbd0e07af86c83ce`)
         .then((res)=>{
             return res.json()
         })
         .then((data)=>{
-            
+            console.log(data);
             
             setWeather(data.weather);
-            // console.log(weather);
-            console.log(data);
+            console.log(weather);
+            
+            setTemp(data.main);
+            console.log(temp);
         })
         .catch((err)=>{
             console.log(err);
@@ -102,10 +105,10 @@ function WeatherInfo(){
                     {geo}
                     </p>
                     <p className="temperature">
-                        {weather.main}
+                        {temp.temp}­°C
                     </p>
                     <p className="condition">
-
+                        {weather[0].description}
                     </p>
                 </div>
                 <div className="detail"></div>
