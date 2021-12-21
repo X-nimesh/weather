@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
+import WeatherInfo from './WeatherInfo';
+
+
 function App() {
+
   return (
     <div className="App">
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src="https://cdn-icons-png.flaticon.com/512/831/831268.png" alt="logo" className="logop" />
+        <p className="logon">My WeatherApp</p>
       </header>
+      
+      <WeatherInfo/>
     </div>
   );
 }

@@ -1,38 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 .App {
-  text-align: center;
+  background:#353B47;
+  color:white;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header{
+  display: flex;
+  height: auto;
+  top: 0;
+  width: 20%;
+  z-index: 1;
+  padding: 10px 0px 0px 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header p{
+  margin-left: 2px;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logop{
+  width: 30px;
+  margin-top: 20px;
+}
+.logon{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  
+}
+/* .bg{
+  width: 100%;
+  height: 100vh;
+  position:absolute;
+  filter: blur(2px);
+  top: 0;
+  z-index: -1;
+} */
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.info{
+  
   display: flex;
   flex-direction: column;
+  width: 50%;
+  
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin-top: 60px; */
+  background: #242831;
   color: white;
+  height: 510px;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+.head{
+  color: rgb(255, 255, 255);
+  font-family: 'Lobster', cursive;
+  margin: 15px;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.searchbar{
+  background: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  border-radius: 30px;
+  margin-left: 90px;
+  padding-left: 30px;
+  font-size: 25px;
+  width: 70%;
+  height: 50px;
+  margin-top: 8px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.searchbutton{
+  background: linear-gradient(90deg, rgba(68,221,255,1) 0%, rgba(0,56,255,1) 100%);
+  border: none ;
+  color: white;
+  overflow: hidden;
+  border-radius: 30px;
+  font-size: 100%;
+  font-weight: bold;
+  height: 50px;
+  width: 20%;
+  margin-top: 8px;
+  margin-left: 7px;
+  transition: transform .2s;
+}
+.searchbutton:hover{
+ 
+
+  transform: scale(1.05); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.searchbar:focus{
+  outline: none;
+  transform: scale(1.05); 
+  
+}
+.content{
+  position:absolute;
+  margin-top: 20px;
+  top: 0;
+  display: flex;
+  width: 60%;
+  
 }
