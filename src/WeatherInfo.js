@@ -49,6 +49,7 @@ function WeatherInfo(){
     let [weather,setWeather]=useState([]);
     let [temp,setTemp]=useState([]);
     let [geo,setlocation]=useState(["kathmandu"]);
+    var weather1;
     
     function readValue(value)
     {
@@ -70,18 +71,22 @@ function WeatherInfo(){
         })
         .then((data)=>{
             console.log(data);
-            
+            // weather1=data;
+            // console.log(weather1);
             setWeather(data.weather[0]);
-            console.log(weather);
+            // console.log(weather);
             
             setTemp(data.main);
-            console.log(temp);
+            // console.log(temp);
         })
         .catch((err)=>{
             console.log(err);
         })
         console.log(weather);
     }
+
+    console.log(weather);
+    console.log(temp);
 
     return(
         <div className="main">
@@ -108,7 +113,7 @@ function WeatherInfo(){
                         {temp.temp}­°C
                     </p>
                     <p className="condition">
-                        {/* {weather[0].description} */}
+                        {weather.description}
                         
                     </p>
                 </div>

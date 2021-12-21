@@ -5,18 +5,15 @@
   padding: 0;
   
 }
-<<<<<<< HEAD
+
 body{
   background:#353B47;
 }
-.App {
-  /* background:#353B47; */
-=======
+
 .App {
   background:#353B47;
->>>>>>> 2070ba5ffa3bf3111c6b523255fc65344bec4f1e
-  color:white;
-  height: 100vh;
+  color: white;
+  
 }
 .App-header{
   display: flex;
@@ -49,8 +46,6 @@ body{
   z-index: -1;
 } */
 .main{
-<<<<<<< HEAD
-=======
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,21 +55,8 @@ body{
 }
 .info{
   
->>>>>>> 2070ba5ffa3bf3111c6b523255fc65344bec4f1e
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-<<<<<<< HEAD
-  overflow: hidden;
-  margin-top: 15px;
-}
-.info{
-  
   display: flex;
   flex-direction: column;
-=======
->>>>>>> 2070ba5ffa3bf3111c6b523255fc65344bec4f1e
   width: 50%;
   
   align-items: center;
