@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Sora:wght@100;200;300;400;500;600&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -63,7 +64,7 @@ body{
   /* margin-top: 60px; */
   background: #242831;
   color: white;
-  height: 510px;
+  height: 600px;
   border-radius: 20px;
   overflow: hidden;
   
@@ -122,4 +123,47 @@ body{
   display: flex;
   width: 60%;
   
+}
+.basic{
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.iconcity{
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.cityTime{
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.city{
+  font-family: 'Lobster', cursive;
+  font-size: 5vw;
+  
+  /* font-weight: bold; */
+}
+.time{
+  font-size:20px;
+  margin-top: -6px;
+  
+}
+.weathericon{
+  width: 15vw;
+  /* margin-left: auto; */
+  
+}
+.temperature{
+  display: flex;
+  /* margin-top: -60px; */
+}
+.temp{
+  font-size: 10vw;
 }
