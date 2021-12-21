@@ -71,7 +71,7 @@ function WeatherInfo(){
         .then((data)=>{
             console.log(data);
             
-            setWeather(data.weather);
+            setWeather(data.weather[0]);
             console.log(weather);
             
             setTemp(data.main);
@@ -80,7 +80,7 @@ function WeatherInfo(){
         .catch((err)=>{
             console.log(err);
         })
-        console.log(weather.main);
+        console.log(weather);
     }
 
     return(
@@ -108,7 +108,8 @@ function WeatherInfo(){
                         {temp.temp}­°C
                     </p>
                     <p className="condition">
-                        {weather[0].description}
+                        {/* {weather[0].description} */}
+                        
                     </p>
                 </div>
                 <div className="detail"></div>
