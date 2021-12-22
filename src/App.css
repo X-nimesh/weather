@@ -9,6 +9,7 @@
 
 body{
   background:#353B47;
+  
 }
 
 .App {
@@ -20,16 +21,17 @@ body{
   display: flex;
   height: auto;
   top: 0;
-  width: 20%;
+  width: 30%;
   z-index: 1;
   padding: 10px 0px 0px 20px;
 }
 .App-header p{
-  margin-left: 2px;
+  margin-left: 5px;
   margin-top: 20px;
 }
 .logop{
   width: 30px;
+  height: 30px;
   margin-top: 20px;
 }
 .logon{
@@ -125,8 +127,9 @@ body{
   
 }
 .basic{
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Sora', sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
+  /* font-family: 'Sora', sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -142,7 +145,7 @@ body{
 .cityTime{
   margin-right: auto;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 .city{
   font-family: 'Lobster', cursive;
@@ -157,14 +160,60 @@ body{
   
 }
 .weathericon{
-  width: 15vw;
+  width: 12vw;
   /* margin-left: auto; */
   
 }
 .temperature{
   display: flex;
-  /* margin-top: -60px; */
+  justify-content: center;
+  margin-top: -10px;
+  font-weight: bold;
 }
 .temp{
-  font-size: 10vw;
+  font-size: 12vw;
+  
+}
+.cel1{
+  font-size: 3vw;
+  margin-top: 20px;
+}
+.condition{
+  font-size: 3vw;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+
+}
+.desc{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  border-top: solid #ffffff 1px;
+  padding-top: 20px;
+  font-size: 1.8vw;
+}
+
+.desc .humidity{
+  text-align: center;
+}
+.hum{
+  font-weight: bold;
+  color: aqua;
+}
+.desc .maxtemp{
+  text-align: center;
+}
+.temM{
+  font-weight: bold;
+  color: rgb(255, 108, 108);
+
+}
+.desc .mintemp{
+  text-align: center;
+}
+.minN{
+  font-weight: bold;
+  color: rgb(115, 255, 115);
 }

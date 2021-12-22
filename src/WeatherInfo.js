@@ -37,7 +37,7 @@ function WeatherInfo(){
     function getWeather(){
 
         setlocation(location);
-        
+
         //replace space with +
 
 
@@ -76,7 +76,7 @@ function WeatherInfo(){
                 <button className="searchbutton" onClick={getWeather}>Search</button>
             </div>
             <p className="head">
-                    Current Weather
+                    {/* Current Weather */}
             </p>
             <div  className="info">
                 <div className="iconcity">
@@ -99,7 +99,7 @@ function WeatherInfo(){
                     </p> */}
                     
                     <div className="temperature">
-                        <p className="temp">{temp.temp}­ </p> <p className="cel1">°C</p> 
+                        <p className="temp">{Math.round(temp.temp)}­ </p> <p className="cel1">°C</p> 
                     </div>
                     <p className="condition">
                         {weather.description}
