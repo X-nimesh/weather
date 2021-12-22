@@ -14,36 +14,7 @@ function WeatherInfo(){
     // let time=d.getHours()+":"+d.getMinutes();
     let time= d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
     let day= days[d.getDay()];
-    // if(dayN==0)
-    // {
-    //     day="Sunday";
-    // }
-    // if(dayN==1)
-    // {
-    //     day="Monday";
-    // }
-    // if(dayN==2)
-    // {
-    //     day="Tuesday";
-    // }
-    // if(dayN==3)
-    // {
-    //     day="Wednesday";
-    // }
-    // if(dayN==4)
-    // {
-    //     day="Thursday";
-    // }
-    // if(dayN==5)
-    // {
-    //     day="Friday";
-    // }
-    // if(dayN==6)
-    // {
-    //     day="Saturday";
-    // }
-    
-    
+   
     window.navigator.geolocation.getCurrentPosition(console.log, console.log);
     
     let location="Kathmandu";
@@ -58,7 +29,7 @@ function WeatherInfo(){
         location=value;
        console.log(value);  
     }
-
+    let loc;
     useEffect(()=>{
         getWeather();
     },[])
@@ -66,8 +37,13 @@ function WeatherInfo(){
     function getWeather(){
 
         setlocation(location);
+        
+        //replace space with +
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${geo}&units=metric&cnt=4&appid=aea7fbafa0aa1dbedbd0e07af86c83ce`)
+
+        loc=location.replace(/\s+/g, '+');
+        console.log(loc);
+        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${loc}&units=metric&cnt=4&appid=aea7fbafa0aa1dbedbd0e07af86c83ce`)
         .then((res)=>{
             return res.json()
         })

@@ -147,6 +147,7 @@ body{
 .city{
   font-family: 'Lobster', cursive;
   font-size: 5vw;
+  text-transform: capitalize;
   
   /* font-weight: bold; */
 }
