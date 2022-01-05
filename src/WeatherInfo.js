@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 function WeatherInfo(){
     
-    
+  
     const d = new Date();
     // let dayN = d.getDay();
     let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -27,8 +27,13 @@ function WeatherInfo(){
     function readValue(value)
     {
         location=value;
-       console.log(value);  
+       console.log(value);
+    //    if(value=="enter"){
+    //     getWeather();
+
+    //    }
     }
+
     let loc;
     useEffect(()=>{
         getWeather();
@@ -67,7 +72,7 @@ function WeatherInfo(){
 
     let icon="https://openweathermap.org/img/wn/"+weather.icon+"@4x.png";
 
-
+  
     return(
         <div className="main">
            

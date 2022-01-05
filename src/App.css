@@ -115,7 +115,7 @@ body{
 
 .searchbar:focus{
   outline: none;
-  transform: scale(1.05); 
+  transform: scale(1.01 ); 
   
 }
 .content{
@@ -165,6 +165,7 @@ body{
   
 }
 .temperature{
+
   display: flex;
   justify-content: center;
   margin-top: -10px;
@@ -183,7 +184,7 @@ body{
   margin-top: 10px;
   text-transform: capitalize;
   font-weight: bold;
-
+  color: rgba(68,221,255,1);
 }
 .desc{
   margin-top: 20px;
