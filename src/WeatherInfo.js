@@ -42,13 +42,13 @@ function WeatherInfo(){
     function getWeather(){
 
         setlocation(location);
-
         //replace space with +
-
 
         loc=location.replace(/\s+/g, '+');
         console.log(loc);
-        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${loc}&units=metric&cnt=4&appid=aea7fbafa0aa1dbedbd0e07af86c83ce`)
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather/?q=${loc}&units=metric&cnt=4&appid=0713812b16d71b25c39f962cc0c6f67e`)
+        
         .then((res)=>{
             return res.json()
         })
